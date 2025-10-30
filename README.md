@@ -20,8 +20,7 @@ Here's a guide on how to add the Neuro-sama Lava Lamp to Home Assistant.
 5. Once paired, the lamp should show up in the app. You can test it here to make sure control of it works.
 6. Now, follow the steps [here](https://xzetsubou.github.io/hass-localtuya/cloud_api/) to create your Tuya IoT Platform account.
 7. Once your account is created, follow the steps [here](https://xzetsubou.github.io/hass-localtuya/usage/installation/) to set up the LocalTuya integration.
-# PUT THE LINK FOR THIS ONE BELOW
-8. Now, download the entity template by right clicking [this link](todo: set link) and put it into your config under `/config/custom_components/localtuya/templates`. Then, restart Home Assistant.
+8. Now, download the entity template. Right click [this link](https://github.com/IceBotYT/ha-neuro-lamp/raw/refs/heads/main/assets/Neuro_Lamp.yaml), click "Save link as..." and put it into your config under `/config/custom_components/localtuya/templates`. Then, restart Home Assistant.
 9. Open the configuration like so:
 ![Configuration menu for LocalTuya](./assets/step8.png)
 10. Click Add new device.
