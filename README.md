@@ -38,3 +38,11 @@ If this doesn't work, try setting Protocol Version to 3.5!
 15. Keep clicking Submit until you see the success screen.
 
 Congratulations! Your lava lamp is now ready to be used.
+
+## Stream Sync?
+
+I've yet to confirm it, but if you set the effect to Music, it should sync to stream. I will update this as soon as I know if it works.
+
+## Problems pairing?
+
+Try resetting it by rapidly plugging and unplugging the lamp 3 times. Otherwise, join [the Discord](https://discord.gg/neurosama) and check the pinned messages in [this forum post](https://discord.com/channels/574720535888396288/1426970657631113376) for the most up to date information.
