@@ -24,7 +24,7 @@ Here's a guide on how to add the Neuro-sama Lava Lamp to Home Assistant.
 9. Open the configuration like so:
 ![Configuration menu for LocalTuya](./assets/step8.png)
 10. Click Add new device.
-11. Here, hopefully your lamp should've been automatically discovered. If it has, choose it in the menu, click submit, and skip to step 13.
+11. Here, hopefully your lamp should've been automatically discovered. If it has, choose it in the menu, click submit, and skip to step 14.
 12. If it wasn't automatically discovered, get your local key and ID by using [TuyAPI](https://github.com/codetheweb/tuyapi).
     - First, make sure [Node.JS is installed](https://nodejs.org/en/download).
     - Install the TuyAPI CLI by running `npm i @tuyapi/cli -g`.
