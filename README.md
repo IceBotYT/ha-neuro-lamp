@@ -11,12 +11,16 @@ Here's a guide on how to add the Neuro-sama Lava Lamp to Home Assistant.
 
 1. Add the lamp in the Swarm Sync app if you haven't already.
 2. Turn on troubleshooting mode in Settings, then copy the debug logs and paste them in your preferred text editor.
-<img src="./assets/step2.jpeg" width="256">
+<img src="./assets/step2.jpeg" width="256"></img>
+
 3. Get your local key by searching your logs for `localKey` and copying the 16-character string next to it without the quotes. For example, if your log looked like this:
+
 ```
 ,"localKey":"a1bc2de345fg6789",
 ```
+
 Your local key would be `a1bc2de345fg6789`.
+
 4. Get the device ID by searching the logs again for `devId` and following the same instructions above, or, in the Swarm Sync app, open the device controls and look under the name of your lamp, that's also your device ID.
 5. If you haven't used LocalTuya before, follow the instructions [here](https://xzetsubou.github.io/hass-localtuya/usage/installation/). Make sure to disable the cloud API. For picking the data center, refer to [this chart](https://github.com/tuya/tuya-home-assistant/blob/main/docs/regions_dataCenters.md).
 6. Now, download the entity template. Right click [this link](https://github.com/IceBotYT/ha-neuro-lamp/raw/refs/heads/main/assets/Neuro_Lamp.yaml), click "Save link as..." and put it into your config under `/config/custom_components/localtuya/templates`. Then, restart Home Assistant.
