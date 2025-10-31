@@ -1,14 +1,16 @@
 - light:
+    entity_category: None
     brightness_lower: 0
     brightness_upper: 1000
+    color_mode_set: '0'
     color: '24'
-    color_mode: '21'
-    color_temp_max_kelvin: 6500
     color_temp_min_kelvin: 2700
+    color_temp_max_kelvin: 6500
     color_temp_reverse: false
-    entity_category: None
-    friendly_name: None
-    id: '20'
-    music_mode: true
-    platform: light
     scene_values: {}
+    music_mode: false
+    color_mode: '21'
+    friendly_name: ''
+    id: '20'
+    platform: light
+    icon: ''
