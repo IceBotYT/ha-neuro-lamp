@@ -11,7 +11,7 @@ Here's a guide on how to add the Neuro-sama Lava Lamp to Home Assistant.
 
 1. Add the lamp in the Swarm Sync app if you haven't already.
 2. Turn on troubleshooting mode in Settings, then copy the debug logs and paste them in your preferred text editor.
-![Troubleshooting mode](./assets/step2.jpeg)
+<img src="./assets/step2.jpeg" width="256">
 3. Get your local key by searching your logs for `localKey` and copying the 16-character string next to it without the quotes. For example, if your log looked like this:
 ```
 ,"localKey":"a1bc2de345fg6789",
