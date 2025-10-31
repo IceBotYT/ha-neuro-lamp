@@ -33,7 +33,7 @@ Your local key would be `a1bc2de345fg6789`.
 
 If this doesn't work, try setting Protocol Version to 3.5!
 
-10. Once connected successfully, click "Use saved template" and choose your new `yaml` file you imported in step 8.
+10. Once connected successfully, click "Use saved template" and choose your new `yaml` file you imported in step 6.
 11. Keep clicking Submit until you see the success screen.
 
 Congratulations! Your lava lamp is now ready to be used.
