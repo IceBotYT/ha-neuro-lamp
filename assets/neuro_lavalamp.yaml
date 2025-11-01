@@ -101,18 +101,6 @@ entities:
             range:
               min: 0
               max: 1000
-  - entity: button
-    name: Swarm Sync
-    icon: "mdi:sync"
-    dps:
-        - id: 21
-          type: string
-          name: color_mode
-          value: hs
-        - id: 21
-          type: string
-          name: color_mode
-          value: scene
   - entity: time
     translation_key: timer
     category: config
