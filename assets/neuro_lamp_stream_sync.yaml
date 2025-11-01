@@ -1,0 +1,33 @@
+blueprint:
+  name: "Neuro Lamp - Stream Sync"
+  description: >-
+    Turns on Stream Sync on the Neuro-sama Lava Lamp. For more information, visit the guide [here](https://github.com/IceBotYT/ha-neuro-lamp).
+    Credits to @Sqbika for the script!
+  domain: script
+  input:
+    device:
+      name: Device
+      description: Choose your lava lamp.
+      selector:
+        entity:
+          filter:
+            integration: tuya_local
+            domain: light
+sequence:
+  - action: light.turn_on
+    metadata: {}
+    data:
+      effect: Scene
+    target:
+      entity_id: !input device
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 500
+  - action: light.turn_on
+    metadata: {}
+    data:
+      effect: Music
+    target:
+      entity_id: !input device

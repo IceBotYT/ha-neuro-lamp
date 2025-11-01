@@ -5,7 +5,7 @@ Here's a guide on how to add the Neuro-sama Lava Lamp to Home Assistant.
 ## Prerequisites
 
 - [Home Assistant](https://home-assistant.io)
-- [LocalTuya integration](https://github.com/xZetsubou/hass-localtuya/)
+- [Tuya Local integration](https://github.com/make-all/tuya-local)
 
 ## Setup
 
@@ -23,25 +23,36 @@ Here's a guide on how to add the Neuro-sama Lava Lamp to Home Assistant.
 Your local key would be `a1bc2de345fg6789`.
 
 4. Get the device ID by searching the logs again for `devId` and following the same instructions above, or, in the Swarm Sync app, open the device controls and look under the name of your lamp, that's also your device ID.
-5. If you haven't used LocalTuya before, follow the instructions [here](https://xzetsubou.github.io/hass-localtuya/usage/installation/). Make sure to disable the cloud API. For picking the data center, refer to [this chart](https://github.com/tuya/tuya-home-assistant/blob/main/docs/regions_dataCenters.md).
-6. Now, download the entity template. Right click [this link](https://github.com/IceBotYT/ha-neuro-lamp/raw/refs/heads/main/assets/Neuro_Lamp.yaml), click "Save link as..." and put it into your config under `/config/custom_components/localtuya/templates`. Then, restart Home Assistant.
-7. Open the configuration like so:
-![Configuration menu for LocalTuya](./assets/step8.png)
-8. Click Add new device.
-9. Use your local key and device ID from earlier to fill out the form like so (leave all optional fields blank):
-![LocalTuya configuration](./assets/step12.png)
+5. If you haven't used Tuya Local before, click the button below to download the integration in HACS, then restart Home Assistant.
 
-If this doesn't work, try setting Protocol Version to 3.5!
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=make-all&repository=tuya-local&category=integration)
 
-10. Once connected successfully, click "Use saved template" and choose your new `yaml` file you imported in step 6.
-11. Keep clicking Submit until you see the success screen.
+6. Download the config by right clicking [this link](https://github.com/IceBotYT/ha-neuro-lamp/raw/refs/heads/main/assets/neuro_lavalamp.yaml) and clicking "Save link as...".
+7. Put the config file in your Home Assistant config under `/config/custom_components/tuya_local/devices`.
+8. Restart Home Assistant.
+9. Start the config flow by clicking the button below.
 
-Congratulations! Your lava lamp is now ready to be used.
+[![Add Integration to your Home Assistant
+instance.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=tuya_local)
 
-## Stream Sync?
+10. In the config flow, choose "Manually provide device connection information."
+11. Enter your device ID and local key from before, and choose protocol version 3.5.
+12. On the next screen, open the dropdown and choose the new device you put in your config called `neuro_lavalamp`.
+13. Name your device and configure an area.
 
-Stream Sync can't be turned on inside Home Assistant. (at least, not yet) You can, however, open the Swarm Sync app and turn on the toggle to sync to stream there.
+## Stream Sync
+
+1. Import the blueprint by clicking the button below:
+
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FIceBotYT%2Fha-neuro-lamp%2Fraw%2Frefs%2Fheads%2Fmain%2Fassets%2Fneuro_lamp_stream_sync.yaml)
+
+2. Configure the blueprint by adding your new lamp and clicking Save.
+3. You now have a script that will turn on Stream Sync by just running it. You can put it on your dashboard or run it however you like.
 
 ## Problems pairing?
 
 Try the troubleshooting available [here](https://swarmsync.app/support.html). Otherwise, join [the Discord](https://discord.gg/neurosama) and check the pinned messages in [this forum post](https://discord.com/channels/574720535888396288/1426970657631113376) for the most up to date information.
+
+## Credits
+
+Thank you to [@Sqbika](https://github.com/Sqbika) for providing the device config and script for turning on Stream Sync!
